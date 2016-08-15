@@ -40,11 +40,11 @@ public class Main {
         return response.body().string();
     }
 
-    public static Dm getTree(String origine, String destinations, Map<String, String>... params ) {
+    public static Dm getTree(String origine, String destinations ) {
         String json = null;
 
         try {
-            String url = "https://maps.googleapis.com/maps/api/distancematrix/json?origins="+origine+"&destinations="+destinations+"&key=AIzaSyCAS81Ko8cQRtfcoqs9mB0JujnbN5utNNc";
+            String url = "https://maps.googleapis.com/maps/api/distancematrix/json?origins="+origine+"&destinations="+destinations+"&key=Your_Key";
             json = getJSON(url);
         } catch (Exception e) {
             e.printStackTrace();
